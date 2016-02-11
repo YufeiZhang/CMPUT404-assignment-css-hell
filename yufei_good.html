@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Yufei Zhang</title>
+    <link rel="stylesheet" type="text/css" href="good.css" />
+</head>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+      
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Languages skills', 'percentages'],
+                ['Python',   25],
+                ['Matlab',   25],
+                ['C/C++',    20],
+                ['Html/Css', 15],
+                ['Java',     15]
+            ]);
+
+            var options = {
+                title: 'Languages skills'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+<body>
+    <div class="sidebar">
+        <p><img src="img/yufei.jpg" width="90%" height="auto" /></p>
+        <h1>Me, Yufei</h1>
+        <p>Hello! My name is Yufei Zhang. I'm a 4th year Computing Science student in University of Alberta.</p>
+        <p>I come from Guiyang, China. This is my 5th year in Canada.</p>
+        <p>I will graduate in June 2016. After graduating, I will try to find a junior programmer job in Edmonton or maybe Calgary.</p>
+        <p>I'm interested in machine learnig, computer graphic, artifitial intelegence, and human computer interaction.</p>
+        <p>I am a very open-minded person and I am fund of music. I can play the flute and I am interested in making some audio files for fun.</p>
+        <p><img src="img/exellentGIF.gif" width="90%" height="auto"/></p>
+    </div>
+
+    <div class="content">
+        <h2>History</h2>
+        <p>I started my life at the Unviersity Of Alberta in 2012. At first, I want to be a engineering student, but then I feel it is too many competition. I took computer 174 in my first term, and that is my first course that got an B+. I turned into Computing Science Specialization at my second years.</p>
+        <p>Computer Science courses that I have taken or currently taking:</p>
+        <p>CMPUT 174 Introduction to the Foundations of Computation I</p>
+        <p>CMPUT 175 Introduction to the Foundations of Computation II</p>
+        <p>CMPUT 201 Practical Programming Methodology</p>
+        <p>CMPUT 204 Algorithms I</p>
+        <P>CMPUT 206 Introduction to Digital Image Processing</P>
+        <P>CMPUT 229 Computer Organization and Architecture I</P>
+        <p>CMPUT 272 Formal Systems and Logic in Computing Science</p>
+        <P>CMPUT 291 File and Database Management</P>
+        <P>CMPUT 301 Introduction to Software Engineering</P>
+        <P>CMPUT 302 Introduction to Human Computer Interaction</P>
+        <P>CMPUT 340 Introduction to Numerical Methods</P>
+        <P>CMPUT 350 Advanced Games Programming</P>
+        <P>CMPUT 366 Intelligent Systems</P>
+        <P>CMPUT 391 Database Management Systems</P>
+        <P>CMPUT 401 Software Process and Product Management</P>
+        <P>CMPUT 404 Web-Based Information Systems</P>
+        <P>CMPUT 414 Introduction to Mutimedia Technology</P>
+        <P>CMPUT 466 Machine Learning</P>
+    </div>
+
+    <h3>My Language Skills</h3>
+
+    <div id="piechart" style="width: 500px; height: 300px;padding-left: 35%;"></div>
+
+    <br>
+    <hr>
+
+    <h4>Some Other Imformation about me</h4>
+    <p>I love dogs soooo much!</p>
+    <p>Sometims I feel that I am similar with dog.</p>
+    <p>However, I only love those cute dogs!</p>
+     
+    <div class="footer">
+        <p>If you have any question, please contact me at yufei2@ualberta.ca</p>
+    </div>
+
+</body>
+</html>
